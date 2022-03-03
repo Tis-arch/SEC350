@@ -40,6 +40,13 @@ firewall {
                 address 172.16.50.3
             }
         }
+        rule 40 {
+            action accept
+            description "Accept traffic from jump"
+            source {
+                address 172.16.50.4
+            }
+        }
     }
     name LAN-to-DMZ {
         default-action drop
